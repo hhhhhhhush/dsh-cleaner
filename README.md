@@ -7,6 +7,7 @@
 **Permanently delete DeepSeek Harness sessions and workspaces.**
 The official client only lets you archive — this tool actually removes them.
 
+[![Release](https://img.shields.io/github/v/release/hhhhhhhush/dsh-cleaner?color=2563eb)](https://github.com/hhhhhhhush/dsh-cleaner/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-6b7280)](#download)
 [![Size](https://img.shields.io/badge/binary-7%20MB-2563eb)](#download)
 [![License](https://img.shields.io/badge/license-MIT-16a34a)](LICENSE)

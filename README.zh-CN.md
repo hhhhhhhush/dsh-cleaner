@@ -7,6 +7,7 @@
 **真正删除 DeepSeek Harness 的会话与工作区。**
 官方客户端只能归档，这个工具能真的删掉。
 
+[![Release](https://img.shields.io/github/v/release/hhhhhhhush/dsh-cleaner?color=2563eb)](https://github.com/hhhhhhhush/dsh-cleaner/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-6b7280)](#下载)
 [![Size](https://img.shields.io/badge/体积-7%20MB-2563eb)](#下载)
 [![License](https://img.shields.io/badge/协议-MIT-16a34a)](LICENSE)
