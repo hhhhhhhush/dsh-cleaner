@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSH Cleaner · 会话清理工具</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img class="logo" src="/favicon.png" alt="" width="34" height="34">
+    <div>
+      <h1>Cleaner</h1>
+      <p class="sub">DeepSeek Harness 会话清理 · 非官方工具</p>
+    </div>
+  </div>
+
+  <div class="home-box">
+    <div class="home-label">数据目录</div>
+    <div class="home-row">
+      <code id="homePath">读取中…</code>
+      <button class="ghost" id="btnSwitch">切换</button>
+      <button class="ghost" id="btnQuit">退出</button>
+    </div>
+  </div>
+</header>
+
+<div id="banner" class="banner hidden"></div>
+
+<nav class="tabs">
+  <button class="tab active" data-tab="all">全部 <span id="cAll">0</span></button>
+  <button class="tab" data-tab="archived">已归档 <span id="cArchived">0</span></button>
+  <button class="tab" data-tab="orphan">未分组 <span id="cOrphan">0</span></button>
+  <button class="tab" data-tab="trash">隔离区 <span id="cTrash">0</span></button>
+</nav>
+
+<div class="toolbar">
+  <input id="search" class="search" type="search" placeholder="按标题或路径搜索…">
+  <label class="switch">
+    <input type="checkbox" id="hardMode">
+    <span>彻底删除（不进隔离区，不可恢复）</span>
+  </label>
+  <button class="ghost" id="btnRefresh">刷新</button>
+</div>
+
+<main id="list" class="list"></main>
+
+<footer class="actionbar">
+  <div class="selinfo"><span id="selCount">0</span> 项已选</div>
+  <div class="actions">
+    <button class="primary" id="btnDeleteSel" disabled>删除选中</button>
+    <button class="danger" id="btnDeleteArchived">删除全部已归档</button>
+    <button class="danger" id="btnDeleteOrphan">清空未分组</button>
+  </div>
+</footer>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>

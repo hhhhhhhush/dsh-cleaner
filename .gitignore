@@ -1,0 +1,30 @@
+# 构建产物
+dsh-cleaner.exe
+dsh-cleaner-cli
+dsh-cleaner-mac
+dsh-cleaner-linux
+dist/
+
+# 测试临时文件
+_shot.png
+_*.txt
+_*.png
+_state.json
+_v.txt
+
+# 一次性验证脚本用的目录
+_pecheck/
+_recycle/
+
+# Go
+*.test
+*.out
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+_shot/
+_crop/
+_win/
